@@ -1,0 +1,14 @@
+<h1>Listado de Comidas</h1>
+
+<ul>
+  <li *ngFor="let item of listaComidas; let i=index">
+      {{item}}
+  </li>
+</ul>
+<button (click)="addComida()"class="btn btn-outline-info">Añadir una comida</button>
+
+<input [(ngModel)]="comidaInput"/>
+
+<p> </p>
+<button (click)="borrarComida()"class="btn btn-outline-danger">BORRAR TODAS LAS COMIDAS</button>
+<h2>{{comidaBorrada}} </h2>

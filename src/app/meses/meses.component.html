@@ -1,0 +1,9 @@
+<h1>Listado de meses</h1>
+
+<ul>
+  <li *ngFor="let item of listaMeses; let i=index">
+      {{item}}
+      <button (click)="borrarMes(i)" class="btn btn-outline-danger">Borrar Mes</button>
+  </li>
+</ul>
+<h2>{{mesBorrado}} </h2>
